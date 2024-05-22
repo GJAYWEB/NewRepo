@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="sample.js"></script> -->
+    <title>Document</title>
+</head>
+<body>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    
+    <button id="jay">Click</button>
+    <script>
+
+        const arr = ["Mama","Kaka","Fufa"];
+
+        document.getElementById("jay").addEventListener("click", function hello(){
+            jay();
+        var a = document.getElementById("fname").value;
+        console.log(a);
+        let b = 0;
+        for(let i = 0; i<arr.length; i++){
+            
+            if(a === arr[i]){
+                b++;
+            }
+            
+        }
+
+        if(b>0){
+            alert("Name is in array");
+
+        }else{
+            alert("Name is not in array");
+        }
+
+
+        function jay(){
+            console.log("Clicked");
+        }
+     
+        var c = 10;
+    });
+    </script>
+</body>
+</html>
